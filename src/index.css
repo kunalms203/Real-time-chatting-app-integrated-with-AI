@@ -12,6 +12,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  color: white;
 }
 
 .container {
@@ -22,4 +23,5 @@ body {
   background-color: rgba(16, 30, 63, 0.741);
   backdrop-filter: blur(12px) saturate(120%);
   border: 1px solid rgba(255, 255, 255, 0.202);
+  display: flex;
 }
