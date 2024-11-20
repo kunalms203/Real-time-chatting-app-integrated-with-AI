@@ -8,6 +8,9 @@
 
 body {
   background-image: url("/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +21,6 @@ body {
 .container {
   height: 90vh;
   width: 90vw;
-  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 12px;
   background-color: rgba(16, 30, 63, 0.741);
   backdrop-filter: blur(12px) saturate(120%);

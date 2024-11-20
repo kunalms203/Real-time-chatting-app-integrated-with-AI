@@ -2,4 +2,56 @@
     flex: 2;
     border-left:1px solid rgba(208, 211, 216, 0.15);
     border-right:1px solid rgba(208, 211, 216, 0.15);
+
+    height: 100%;
+    padding: 0.25rem;
+
+    .top{
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.254);
+
+        .user{
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+
+            img{
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+
+            .texts{
+                display: flex;
+                flex-direction: column;
+                gap: 0.30rem;
+
+                span{
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+
+                p{
+                    font-size: 14px;
+                    font-weight: 300;
+                    color: rgb(169, 162, 162);
+                }
+            }
+
+        }
+
+        .icons{
+            display: flex;
+            gap: 20px;
+            img{
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+            }
+        }
+    }
 }
