@@ -2,9 +2,9 @@
     flex: 2;
     border-left:1px solid rgba(208, 211, 216, 0.15);
     border-right:1px solid rgba(208, 211, 216, 0.15);
-
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    padding: 0.25rem;
 
     .top{
         padding: 0.5rem;
@@ -55,7 +55,7 @@
         }
     }
     .center{
-
+        flex: 1;
     }
     .bottom{
         padding: 1.25rem;
@@ -91,6 +91,14 @@
             border-radius: 0.25rem;
             color: white;
             cursor: pointer;
+        }
+        .emoji{
+            position: relative;
+            .picker{
+                position: absolute;
+                bottom: 50px;
+                right: 0rem;
+            }
         }
     }
 }

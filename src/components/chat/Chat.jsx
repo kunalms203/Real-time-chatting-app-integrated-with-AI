@@ -4,6 +4,11 @@ import { useState } from "react";
 
 const Chat = () => {
   const [showEmojiPicker, setShowEmojiPicker] = useState(false);
+  const [message, setMessage] = useState("");
+  const handleEmoji= e=> {
+    setMessage(prev=>prev+e.emoji);
+  };
+  
   return (
     <div className="chat">
       <div className="top">
@@ -27,10 +32,12 @@ const Chat = () => {
           <img src="./camera.png" alt="" />
           <img src="./mic.png" alt="" />
         </div>
-        <input type="text" placeholder="Type a message..." />
+        <input type="text" placeholder="Type a message..." value={message} onChange={e=>setMessage(e.target.value)}/>
         <div className="emoji">
           <img src="./emoji.png" alt="" onClick={()=>{setShowEmojiPicker(prev=>!prev)}}/>
-          <EmojiPicker open={showEmojiPicker} />
+          <div className="picker">
+          <EmojiPicker open={showEmojiPicker} onEmojiClick={handleEmoji} />
+          </div>
         </div>
         <button className="sendbutton">send</button>
       </div>
