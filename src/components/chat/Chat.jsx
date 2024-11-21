@@ -25,7 +25,32 @@ const Chat = () => {
           <img src="./info.png" alt="" />
         </div>
       </div>
-      <div className="center"></div>
+      <div className="center">
+        <div className="messege">
+          <img src="./avatar.png" alt="" />
+          <div className="center-text">
+            <p>
+              Hi everyone! I'm Shubham. I'm a software engineer.
+              I'm here to help you with your project.
+              Feel free to ask any questions.
+              Have a great day!
+            </p>
+            <span>1 min ago</span>
+          </div>
+        </div>
+        <div className="messege own">
+          <div className="center-text">
+            <p>
+              Hi everyone! I'm Kunal. I'm a software engineer.
+              I'm here to help you with your project.
+              Feel free to ask any questions.
+              Have a great day!
+            </p>
+            <span>1 min ago</span>
+          </div>
+ 
+        </div>
+      </div>
       <div className="bottom">
         <div className="icons">
           <img src="./img.png" alt="" />
