@@ -123,7 +123,8 @@ const Detail = () => {
             <img src="./arrowUp.png" alt="" />
           </div>
         </div>
-        <button onClick={()=>{setfirst(prev=>prev+1)}}>Bolck User</button>
+        <button>Bolck User</button>
+        <button className="logout">Log Out</button>
       </div>
     </div>
   );

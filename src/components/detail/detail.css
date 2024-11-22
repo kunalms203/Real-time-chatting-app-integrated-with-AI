@@ -8,8 +8,7 @@
     flex-direction: column;
     align-items: center;
     gap: 1.25rem;
-    
-    
+
     border-bottom: 1px solid rgba(183, 173, 173, 0.772);
     img {
       width: 100px;
@@ -25,7 +24,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.9rem;
-    
+
     .options {
       .title {
         display: flex;
@@ -78,14 +77,26 @@
         }
       }
     }
-    button{
-      padding: 0.60rem;
-      border-radius: 0.5rem;
+    button {
+      padding: 0.6rem;
+      border-radius: 0.25rem;
       border: none;
-      background-color: rgba(0, 220, 254, 0.819);
+      background-color: rgba(232, 65, 93, 0.799);
       color: white;
-      margin-left: 0.50rem;
-      margin-right: 0.50rem;
+      margin-left: 0.5rem;
+      margin-right: 0.5rem;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(224, 25, 59);
+        font-weight: 700;
+      }
+    }
+    .logout{
+      background-color: rgba(16, 153, 227, 0.716);
+      &:hover {
+        background-color: rgb(16, 153, 227);
+        font-weight: 700;
+      }
     }
   }
 }
