@@ -27,7 +27,7 @@ const Chat = () => {
       </div>
       <div className="center">
         <div className="messege">
-          <img src="./avatar.png" alt="" />
+          <img className="img-avtar" src="./avatar.png" alt="" />
           <div className="center-text">
             <p>
               Hi everyone! I'm Shubham. I'm a software engineer.
@@ -40,8 +40,9 @@ const Chat = () => {
         </div>
         <div className="messege own">
           <div className="center-text">
+            <img src="https://www.billboard.com/wp-content/uploads/2023/07/Olivia-Rodrigo-press-credit-Larissa-Hofmann-2023-billboard-1548.jpg?w=942&h=623&crop=1" alt="" />
             <p>
-              Hi everyone! I'm Kunal. I'm a software engineer.
+              Hi everyone! I'm olivia. I'm a software engineer.
               I'm here to help you with your project.
               Feel free to ask any questions.
               Have a great day!
