@@ -1,7 +1,10 @@
 import "./detail.css";
+import { useState } from "react";
 const Detail = () => {
+    const [first, setfirst] = useState(1);
   return (
     <div className="detail">
+      {first}
       <div className="detail-user">
         <img src="./avatar.png" alt="" />
         <h2>Kunal Shinde</h2>
@@ -73,6 +76,40 @@ const Detail = () => {
               <img src="./download.png" alt="" className="icon-down"/>
             </div>
           </div>
+          <div className="photos">
+            <div className="PhotoItem">
+              <div className="photodetail">
+                <img
+                  src="https://www.billboard.com/wp-content/uploads/2023/07/Olivia-Rodrigo-press-credit-Larissa-Hofmann-2023-billboard-1548.jpg?w=942&h=623&crop=1"
+                  alt=""
+                />
+                <span>photo_2024</span>
+              </div>
+              <img src="./download.png" alt="" className="icon-down"/>
+            </div>
+          </div><div className="photos">
+            <div className="PhotoItem">
+              <div className="photodetail">
+                <img
+                  src="https://www.billboard.com/wp-content/uploads/2023/07/Olivia-Rodrigo-press-credit-Larissa-Hofmann-2023-billboard-1548.jpg?w=942&h=623&crop=1"
+                  alt=""
+                />
+                <span>photo_2024</span>
+              </div>
+              <img src="./download.png" alt="" className="icon-down"/>
+            </div>
+          </div><div className="photos">
+            <div className="PhotoItem">
+              <div className="photodetail">
+                <img
+                  src="https://www.billboard.com/wp-content/uploads/2023/07/Olivia-Rodrigo-press-credit-Larissa-Hofmann-2023-billboard-1548.jpg?w=942&h=623&crop=1"
+                  alt=""
+                />
+                <span>photo_2024</span>
+              </div>
+              <img src="./download.png" alt="" className="icon-down"/>
+            </div>
+          </div>
         </div>
         <div className="options">
           <div className="title">
@@ -80,7 +117,13 @@ const Detail = () => {
             <img src="./arrowUp.png" alt="" />
           </div>
         </div>
-        <button>Bolck User</button>
+        <div className="options">
+          <div className="title">
+            <span>chat Files</span>
+            <img src="./arrowUp.png" alt="" />
+          </div>
+        </div>
+        <button onClick={()=>{setfirst(prev=>prev+1)}}>Bolck User</button>
       </div>
     </div>
   );
