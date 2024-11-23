@@ -20,7 +20,7 @@ const Login = () => {
         <h2>Welcome Back</h2>
         <form>
           <input type="text" placeholder="Username" name="username" />
-          <input type="text" placeholder="Password" name="password" />
+          <input type="password" placeholder="Password" name="password" />
           <button>Sign In</button>
         </form>
       </div>
@@ -31,7 +31,7 @@ const Login = () => {
         <form>
           <label htmlFor="file">
             <img src={avatar.url || "./avatar.png"} alt="" />
-            upload image</label>
+            upload an image</label>
           <input
             type="file"
             id="file"
@@ -40,7 +40,7 @@ const Login = () => {
           />
           <input type="text" placeholder="Username" name="username" />
           <input type="text" placeholder="Email" name="email" />
-          <input type="text" placeholder="Password" name="password" />
+          <input type="password" placeholder="Password" name="password" />
           <button>Sign UP</button>
         </form>
       </div>
