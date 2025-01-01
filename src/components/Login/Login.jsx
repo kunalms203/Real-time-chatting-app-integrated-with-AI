@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
+import { toast } from "react-toastify";
 
 const Login = () => {
   const [avatar, setavatar] = useState({
@@ -14,11 +15,15 @@ const Login = () => {
       });
     }
   };
+  const handleLogin = (e) => {
+    e.preventDefault();
+    toast.warn('hello');
+  };
   return (
     <div className="login">
       <div className="item">
         <h2>Welcome Back</h2>
-        <form>
+        <form onSubmit={handleLogin}>
           <input type="text" placeholder="Username" name="username" />
           <input type="password" placeholder="Password" name="password" />
           <button>Sign In</button>
@@ -44,7 +49,9 @@ const Login = () => {
           <button>Sign UP</button>
         </form>
       </div>
+      
     </div>
+
   );
 };
 

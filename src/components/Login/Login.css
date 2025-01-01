@@ -46,8 +46,8 @@
                 border: none;
             }
             img{
-                width: 2rem;
-                height: 2rem;
+                width: 2.5rem;
+                height: 2.5rem;
                 border-radius: 0.2rem;
                 object-fit: cover;
             }
@@ -57,6 +57,7 @@
                 gap: 0.5rem;
                 justify-content:left ;
                 margin-bottom: 8px;
+                cursor: pointer;
             }
         }
     }
