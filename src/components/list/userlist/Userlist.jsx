@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./userList.css";
+import Adduser from "./addUser/Adduser";
 const Userlist = () => {
   const [add, setAdd] = useState(false);
   return (
@@ -25,6 +26,7 @@ const Userlist = () => {
             <p>Software Engineer</p>
         </div>
       </div>
+      {add && <Adduser />}
     </div>
   );
 };

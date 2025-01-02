@@ -1,10 +1,8 @@
 import "./detail.css";
 import { useState } from "react";
 const Detail = () => {
-    const [first, setfirst] = useState(1);
   return (
     <div className="detail">
-      {first}
       <div className="detail-user">
         <img src="./avatar.png" alt="" />
         <h2>Kunal Shinde</h2>
