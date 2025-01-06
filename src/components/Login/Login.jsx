@@ -17,7 +17,21 @@ const Login = () => {
   };
   const handleLogin = (e) => {
     e.preventDefault();
-    toast.warn('hello');
+  };
+
+
+  const handleRegister = (e) => {
+    e.preventDefault();
+    toast.success('Registration Successful');
+    const formData = new FormData(e.target);
+    const { username, email, password} = Object.fromEntries(formData);
+    console.log(username, email, password);
+    try{
+      
+    }catch(err){
+      console.log(err.message);
+      toast.error('Registration Failed');
+    }
   };
   return (
     <div className="login">
@@ -33,7 +47,7 @@ const Login = () => {
       <div className="item">
         <h2>Sign UP</h2>
 
-        <form>
+        <form onSubmit={ handleRegister }>
           <label htmlFor="file">
             <img src={avatar.url || "./avatar.png"} alt="" />
             upload an image</label>

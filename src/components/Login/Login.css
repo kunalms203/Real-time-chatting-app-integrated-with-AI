@@ -4,6 +4,8 @@
     display: flex;
     align-items: center;
     gap: 100px;
+    padding-left: 4rem;
+    padding-right:4rem;
     .seprator{
         background-color: rgba(255, 255, 255, 0.254);
         width: 1px;
